@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", type= 'text/css', href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet", type='text/css',  href= "{{ url_for('static', filename='styles.css') }}">
+    <title>Dojo Survey Results</title>
+</head>
+<body>
+    <div id="base">
+        <div id="survey">
+            <form action="/submit"  method='post'>
+                <div class="survey_item">
+                    <label for="name">Your Name: </label>
+                    <input type="text" class="user_info" name="name" placeholder="" value="">
+                </div>
+                <div class="survey_item">
+                    <label for="dojo_location">Dojo Location: </label>
+                    <select name="dojo_location">
+                        <option value="Seattle">Seattle</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Tampa">Tampa</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+                <div class="survey_item">
+                    <label for="language">Favorite language: </label>
+                    <select name="language">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Chinese">Chinese</option>
+                    </select>
+                </div class="survey_item">
+                <div id='comment_box'>
+                    <label for="comments">Comments: <br></label>
+                    <textarea name="comments"></textarea>
+                </div>
+                <div class="survey_item button_box">
+                    <input type="submit" class="btn btn-warning btn-lg btn-block" value="Submit Form">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

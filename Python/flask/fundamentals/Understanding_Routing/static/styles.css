@@ -1,0 +1,187 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    font-family: 'Lucinda Sans Typewriter','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+.header{
+    color: white;
+}
+#wrapper {
+    background-color: #062134;
+    width: 970px;
+    margin: auto;
+    padding: 5px;
+}
+    #nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+        #nav-bar h1 {
+            font-size: 18pt;
+            flex: 2;
+            }
+            #nav-bar h1 span{
+                color: #1e98e7;
+            }
+        #nav-bar ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 3;
+        }
+            #nav-bar ul li {
+                list-style: none;
+                font-size: 12px;
+            }
+                #nav-bar ul li a {
+                    text-decoration: none;
+                    color: white;
+                }
+            #nav-bar ul .home a {
+                    color: #2a5c80;
+                }
+    #body {
+        background-color: white;
+    }
+        #body .main-image {
+            width: 940px;
+            padding: 15px;
+            }
+        #body #middle-body {
+            display: flex;
+            justify-content: space-evenly;            
+        }
+            #body .information {
+                padding: 15px;
+                margin: 0px 15px 15px 15px;
+                background-color: #1468a8;
+                height: 180px;
+                width: 280px;
+            }
+                #body .information .info-title {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding: 0px 5px 5px 0px;
+                }
+                    #body .information .info-title img {
+                        height: 30px;
+                        width: 30px;
+                        background: radial-gradient(circle, #ffffff 0%, #fffffe 54%,#1468a7 55%, #1468a8 100%);
+                        border-radius: 50px;
+                    }
+                    #body .information .info-title h2 {
+                        font-size: 16t;
+                    }
+                #body .information p {
+                    color: white;
+                    font-size: 11px;
+                    padding: 0px 15px 10px 10px;
+                }
+                #body .information button {
+                    background-image: linear-gradient(#56b4ee 0%, #56b4ef 50%,#1993de 51%,#1993df 100%);
+                    width: 100px;
+                    height: 33px;
+                    margin-top: 30px;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 10pt;
+                }
+        /* This is the start of the lower body */
+                #body #lower-body .low-head-bar {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 15px;
+                }
+                #body #lower-body .low-head-bar .LHB-head-1 {
+                    flex: 2;
+                    font-size: 16pt;
+                }
+                #body #lower-body .low-head-bar .LHB-head-2 {
+                    width: 290px;
+                    font-size: 16pt;
+                }
+            #body #lower-body .lower-information {
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 15px;
+            }
+                #body #lower-body .lower-information .building {
+                    margin: 0px 15px;
+                }
+                #body #lower-body .lower-information .lower-information-middle-box {
+                    height: 146px;
+                    width: 290px;
+                    margin: 0px 15px;
+                }
+                    #body #lower-body .lower-information .lower-information-middle-box p{
+                        font-size: 11px;
+                        padding-bottom: 15px;
+                    }
+                    #body #lower-body .lower-information .lower-information-middle-box a{
+                        text-decoration: none;
+                        color: #5e8bad;
+                        padding: 15px 0px;
+                        font-size: 14px;
+                    }
+                #body #lower-body .lower-information .testimonial {
+                    height: 146px;
+                    width: 290px;
+                    margin: 0px 15px;
+                }
+                    #body #lower-body .lower-information .testimonial .general-statement {
+                        background-color: #daedff;
+                        padding: 15px 15px 35px 15px;
+                        font-style: italic;
+                        font-size: 14px;
+                        height: 62px;
+                        position: relative;
+                    }
+                    #body #lower-body .lower-information .testimonial .general-statement::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-top: 9px solid #daedff;
+                        bottom: -9px;
+                        left: 30px;
+                    }
+                    #body #lower-body .lower-information .testimonial .name {
+                        padding-top: 20px;
+                        font-size: 12px;
+                    }
+    #footer {
+        background-color: #daedff;
+        display: flex;    
+        justify-content: center;
+        border-top: 1px solid #062134;
+    }
+        #footer ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            padding: 12px 15px 12px 0px;
+            width: 290px;
+        }
+            #footer ul li a {
+                text-decoration: none;
+                color: #5e8bad;
+                }
+            #footer .home a {
+                color: #add3f2;
+            }
+            #footer ul li {
+                font-size: 11px;
+            }

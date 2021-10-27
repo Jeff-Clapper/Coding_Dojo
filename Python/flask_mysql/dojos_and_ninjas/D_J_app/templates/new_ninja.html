@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", type= 'text/css', href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet", type='text/css',  href= "{{ url_for('static', filename='styles.css') }}">
+    <title>New Ninja</title>
+</head>
+<body>
+    <div id="base">
+        <form action="/create_ninja" method="post">
+            <h2>New Ninja</h2>
+            <label for="dojo">Dojo: </label>
+            <select name="dojo">
+                {% for dojo in dojos %}
+                <option value="{{ dojo.id }}">{{ dojo.name }}</option>
+                {% endfor %}
+            </select>
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name">
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name">
+            <label for="age">Age: </label>
+            <select name="age">
+                {% for age in range(15,81) %}
+                    <option value="{{age}}">{{age}}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Create</button>
+        </form>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+                {% for message in messages %}            <!-- loop through the messages -->
+                    <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>

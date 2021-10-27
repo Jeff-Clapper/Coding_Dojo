@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.data {
+    padding: 5px 0px;
+    margin: 5px;
+}
+.error {
+    background-color: lightgrey;
+    color: red;
+    border-radius: 5px;
+}
+#error_messages {
+    padding: 10px;
+}

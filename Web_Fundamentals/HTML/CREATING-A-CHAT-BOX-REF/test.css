@@ -1,0 +1,43 @@
+#wrapper {
+    background-color: gray;
+    width: 970px;
+    height: 500px;
+    margin: auto;
+    padding: 20px
+}
+
+/* .comment {
+    width: 400px; 
+}*/
+
+
+
+p {
+    width: 300px;
+    margin: 0px 0px 10px 0px;
+    background-color: lightblue;
+}
+
+.comment {
+    width: 400px;
+    position: relative;
+    background-color: orange;
+    padding: 20px;
+    margin: 20px 0px 0px 20px;
+}
+.bubble:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid lightblue;
+    bottom: 15px;
+    left: 45px;
+}
+
+
+
+/* Video instruction found at https://www.youtube.com/watch?v=Rar2u77i_yg  */

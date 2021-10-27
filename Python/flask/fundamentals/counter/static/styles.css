@@ -1,0 +1,33 @@
+body {
+    background: #d3dfeb;
+}
+#base {
+    width: 100%;
+    margin:auto;
+    padding-top: 200px;
+    align-items: center;
+}
+    #counter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+        #counter h1 {
+            font-size: 100px;
+            text-align: center;
+        }
+        #counter .number {
+            font-size: 75px;
+            margin: auto;
+            text-align: center;
+        }
+    #button {
+        padding: 100px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        
+    }

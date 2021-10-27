@@ -1,0 +1,9 @@
+#home {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}

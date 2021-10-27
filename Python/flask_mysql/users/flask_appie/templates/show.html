@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display User</title>
+</head>
+<body>
+    <h1> User {{person['id']}}</h1>
+    <ul style="list-style-type: none;">
+        <li>First Name: {{person['first_name']}} </li> 
+        <li>Last Name:  {{person.last_name }}</li>
+        <li>Email: {{ person.email }}</li>
+        <li>Created On: {{ person.created_at}}</li>
+        <li>Last Updated On: {{ person.updated_at }}</li>
+    </ul>
+    <ul style="display: flex; justify-content: left; list-style-type: none;">
+        <li style="margin-inline-end: 5px;"><a href="/">Home</a></li>
+        <li style="margin-inline-end: 5px;">|</li>
+        <li style="margin-inline-end: 5px;"><a href="/edit/{{person['id']}}">Edit</a></li>
+        <li style="margin-inline-end: 5px;">|</li>
+        <li style="margin-inline-end: 5px;"><a href="/delete/{{person['id']}}">Delete</a></li>
+    </ul>
+</body>
+</html>
