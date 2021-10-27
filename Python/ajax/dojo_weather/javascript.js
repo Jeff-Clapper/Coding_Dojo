@@ -22,7 +22,7 @@ async function getTampaWeather(city) {
 }
 
 async function getChicagoWeather(city) {
-    var response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=34a2bfc3e1a5b157f66e325147513649")
+    var response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=")
     var CityWeather = await response.json()
 
     var currTemp = CityWeather.main['temp']
@@ -44,7 +44,7 @@ async function getChicagoWeather(city) {
 }
 
 async function getBurbankWeather(city) {
-    var response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Burbank&units=imperial&appid=34a2bfc3e1a5b157f66e325147513649")
+    var response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Burbank&units=imperial&appid=")
     var CityWeather = await response.json()
 
     var currTemp = CityWeather.main['temp']
@@ -67,7 +67,7 @@ async function getBurbankWeather(city) {
 
 
 async function getDallasWeather(city) {
-    var response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Dallas&units=imperial&appid=34a2bfc3e1a5b157f66e325147513649")
+    var response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Dallas&units=imperial&appid=")
     var CityWeather = await response.json()
 
     var currTemp = CityWeather.main['temp']
